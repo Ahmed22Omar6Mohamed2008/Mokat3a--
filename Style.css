@@ -1,58 +1,83 @@
+:root{
+    --basiccolor: white;
+    --secondcolor: rgb(117, 114, 114);
+}
+
+
+
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: rgb(117, 114, 114);
-}
-
-header .nav-links a {
-  text-decoration: none;
-  font-size: 20px;
-  padding-right: 70px;
-  color: white;
-  transition: 0.9s;
-}
-
-header .nav-links a:hover {
-  font-size: 22px;
-}
-
-input[type="button"] {
-  border: 1px black solid;
-  padding: 5px;
-  border-radius: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-input[type="button"]:hover {
-    transition-duration: 2s;
-}
-
-.home-left {
-    width: 50%;
-
-}
-
-.home {
+  /**home**/
+  .web{
+    min-height: 100vh;
+  }
+  header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 90px;
-}
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--secondcolor);
+  }
+  
+  header .nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 70px;
+    color: white;
+    transition: 0.9s;
+  }
+  
+  header .nav-links a:hover {
+    font-size: 22px;
+  }
+  
+  input[type="button"] {
+    border: 1px black solid;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+      transition-duration: 2s;
+  }
+  
+  .home-left {
 
-.home-welcome {
-    width: 400px;
+      padding-top: 90px;
+      width: 30%;
+  
+  }
+  h1.welcome{
+    font-size: 30px;
+    line-height: 90px;
+  }
+  .home {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 90px;
+
+  }
+  
+  .home-welcome {
+    align-items: center;
+
+      width: 400px;
+  }
+
+  /** About **/
+ .about {
+  background-color:var(--secondcolor) ;
+  width: 100%;
+
 }
